@@ -9,12 +9,12 @@ import numpy as np
 import joblib
 
 
-MODEL_PATH = Path("artifacts/model.pkl")
+mODEL_PATH = Path("artifacts/model.pkl")
 
 def load_model():
-    if not MODEL_PATH.exists():
-        raise FileNotFoundError(f"Model file not found: {Model_PATH}")
-    return joblib.load(MODEL_PATH)
+    if not mODEL_PATH.exists():
+        raise FileNotFoundError(f"Model file not found: {mODEL_PATH}")
+    return joblib.load(mODEL_PATH)
 
 def main():
     parser = argparse.ArgumentParser()
